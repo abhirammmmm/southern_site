@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Southern Sales &amp; Services | Polyglaze Dealer</title>
+
+    <!-- Google Fonts + Font-Awesome (icons) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-W6iUFHXEz0xJXrmmadV4x7av6gK70psRi5heZPjXHJpzT+Vt7w48Z3DNSEqGVme6GvIm8a+9zYJPpJ3pbBs1yg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>html{scroll-behavior:smooth}</style>
+  </head>
+
+  <body>
+    <!-- ========= Header ========= -->
+    <header class="header">
+      <div class="container flex-between">
+        <a href="#hero" class="brand">
+          <img src="assets/images/southern_logo.jpg" alt="Southern S & S logo" class="brand__logo" />
+          <span class="brand__text">Southern Sales & Services</span>
+        </a>
+
+        <nav id="nav" class="nav">
+          <ul class="nav__list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#offerings">Offerings</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button id="navToggle" class="nav-toggle" aria-label="Menu">
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ========= HERO ========= -->
+    <section class="hero" id="hero">
+      <!-- glass panel -->
+      <div class="hero__glass" data-animate="fade-in">
+        <h1 class="hero__title">Southern Sales & Services</h1>
+        <p class="hero__subtitle">
+          Trusted <img src="assets/images/poly.png" alt="Polyglaze" class="inline-logo"> dealer for adhesives &amp; grouts since 2015.
+        </p>
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- ========= ABOUT ========= -->
+    <section id="about" class="section section--light section--divider">
+      <div class="container">
+        <h2 class="section__title" data-animate="slide-up">Who We Are</h2>
+        
+        <div class="about-intro" data-animate="fade-in">
+          <p class="about-intro__text">
+            From granite specialists to comprehensive construction solutions - our journey spans over two decades of excellence and innovation.
+          </p>
+        </div>
+
+        <div class="timeline" data-animate="fade-in">
+          <div class="timeline__item" data-animate="slide-up">
+            <div class="timeline__marker">
+              <span class="timeline__year">2000</span>
+            </div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">The Beginning</h3>
+              <p class="timeline__text">Started our journey in granite sales and services, building expertise and establishing our foundation in the construction materials industry.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item" data-animate="slide-up">
+            <div class="timeline__marker">
+              <span class="timeline__year">2015</span>
+            </div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Proprietorship Launch</h3>
+              <p class="timeline__text">Founded our own proprietorship with <strong>15 years of valuable experience</strong>, establishing Southern Sales & Services as an independent business entity.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item" data-animate="slide-up">
+            <div class="timeline__marker">
+              <span class="timeline__year">2025</span>
+            </div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Decade of Growth</h3>
+              <p class="timeline__text">Now a <strong>decade-old business</strong> based in Visakhapatnam with clients and contracts <strong>all over India!</strong></p>
+            </div>
+          </div>
+
+          <div class="timeline__item timeline__item--highlight" data-animate="slide-up">
+            <div class="timeline__marker timeline__marker--special">
+              <img src="assets/images/poly.png" alt="Polyglaze" class="timeline__logo">
+            </div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Strategic Partnership</h3>
+              <p class="timeline__text">Recently diversified into <strong>adhesives</strong> and <strong>epoxy grouts</strong>, collaborating with <img src="assets/images/poly.png" alt="Polyglaze" class="inline-logo"> to bring cutting-edge solutions to our clients.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats" data-animate="fade-in">
+          <div class="stat-card" data-animate="slide-up">
+            <div class="stat-card__number">25+</div>
+            <div class="stat-card__label">Years Experience</div>
+          </div>
+          <div class="stat-card" data-animate="slide-up">
+            <div class="stat-card__number">10+</div>
+            <div class="stat-card__label">Years in Business</div>
+          </div>
+          <div class="stat-card" data-animate="slide-up">
+            <div class="stat-card__number">All India</div>
+            <div class="stat-card__label">Coverage</div>
+          </div>
+          <div class="stat-card" data-animate="slide-up">
+            <div class="stat-card__number">Trusted</div>
+            <div class="stat-card__label"><img src="assets/images/poly.png" alt="Polyglaze" class="stat-logo"> Partner</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========= CORE OFFERINGS ========= -->
+    <section id="offerings" class="section section--shade section--divider">
+      <div class="container">
+        <h2 class="section__title" data-animate="slide-up">Our Core Offerings</h2>
+
+        <div class="carousel">
+          <button class="carousel__btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="carousel__track" id="offeringsTrack">
+            <!-- duplicate / remove cards as needed -->
+            <article class="card">
+              <img src="assets/images/polyglaze_pz4.jpg" alt="Adhesives" class="card__img" />
+              <div class="card__badge">Pro Grade</div>
+              <div class="card__icon"><i class="fa-solid fa-hammer"></i></div>
+              <h3 class="card__title">Adhesives</h3>
+              <p class="card__text">High-bond industrial adhesives for professional applications. Perfect for heavy-duty installations and commercial projects.</p>
+            </article>
+            <article class="card">
+              <img src="assets/images/polyglaze_tile_grout.jpg" alt="Grouts" class="card__img" />
+              <div class="card__badge">Trade Choice</div>
+              <div class="card__icon"><i class="fa-solid fa-trowel"></i></div>
+              <h3 class="card__title">Grouts</h3>
+              <p class="card__text">Uniform tone epoxy grouts designed for contractors. Superior durability and consistent color matching for professional results.</p>
+            </article>
+            <article class="card">
+              <img src="assets/images/polyglaze_putty.jpg" alt="Putty" class="card__img" />
+              <div class="card__badge">Contractor</div>
+              <div class="card__icon"><i class="fa-solid fa-screwdriver"></i></div>
+              <h3 class="card__title">Putty</h3>
+              <p class="card__text">Smooth finish putty for surface preparation. Essential for achieving professional-grade finishes in construction projects.</p>
+            </article>
+            <article class="card">
+              <img src="assets/images/polyglaze_premix_plaster.jpg" alt="Plaster" class="card__img" />
+              <div class="card__badge">Ready-Mix</div>
+              <div class="card__icon"><i class="fa-solid fa-wrench"></i></div>
+              <h3 class="card__title">Plaster</h3>
+              <p class="card__text">Ready-mix plaster solutions for time-efficient applications. Consistent quality and easy application for trade professionals.</p>
+            </article>
+          </div>
+          <button class="carousel__btn next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= FEATURED RANGE ========= -->
+    <section class="section section--featured section--divider">
+      <div class="container">
+        <h2 class="section__title" data-animate="slide-up">Featured Product Range</h2>
+        
+        <p class="section__subtitle" data-animate="fade-in">
+          Discover our premium <img src="assets/images/poly.png" alt="Polyglaze" class="inline-logo"> professional solutions
+        </p>
+
+        <div class="carousel">
+          <button class="carousel__btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="carousel__track" id="rangeTrack">
+            <div class="showcase-item">
+              <img src="assets/images/polyglaze_all.jpg" alt="Assorted Polyglaze Products" class="showcase__img" />
+              <div class="showcase__badge">Complete Range</div>
+              <div class="showcase__info">
+                <h3>Assorted Polyglaze Products</h3>
+                <p>Complete range of professional-grade adhesives and grouts</p>
+              </div>
+            </div>
+            <div class="showcase-item">
+              <img src="assets/images/polyglaze_pz.jpg" alt="PZ 200 XT Adhesive" class="showcase__img" />
+              <div class="showcase__badge">Best Seller</div>
+              <div class="showcase__info">
+                <h3>PZ 200 XT Adhesive</h3>
+                <p>High-performance tile adhesive for heavy-duty applications</p>
+              </div>
+            </div>
+            <div class="showcase-item">
+              <img src="assets/images/polyglaze_tile_grout.jpg" alt="PZC Premium Grout" class="showcase__img" />
+              <div class="showcase__badge">Professional</div>
+              <div class="showcase__info">
+                <h3>PZC Premium Grout</h3>
+                <p>Uniform color grout perfect for commercial projects</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel__btn next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= CONTACT ========= -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section__title" data-animate="slide-up">Let's Work Together</h2>
+        <p class="section__subtitle" data-animate="fade-in">
+          Visit our store or get in touch with our professional team
+        </p>
+
+        <div class="contact-grid">
+          <!-- Contact Info - Left Side -->
+          <div class="contact-info-container" data-animate="slide-right">
+            <h3>Get In Touch</h3>
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div class="contact-icon">📞</div>
+                <div class="contact-text">
+                  <h4>Call Us</h4>
+                  <a href="tel:+919246679903">+91 92466 79903</a>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-text">
+                  <h4>Email Us</h4>
+                  <a href="mailto:southernsales1626@gmail.com">southernsales1626@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="contact-icon">🕒</div>
+                <div class="contact-text">
+                  <h4>Business Hours</h4>
+                  <p>Mon - Sat: 9:00 AM - 7:00 PM<br>Sunday: Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map & Address - Right Side -->
+          <div class="map-address-container" data-animate="slide-left">
+            <h3>Visit Our Store</h3>
+            <div class="map-container">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.8247056447434!2d83.32458030000001!3d17.739720200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a394300010430c5%3A0x1823c14b3cefda8a!2sSouthern%20Sales%20and%20Services!5e0!3m2!1sen!2sin!4v1640995200000!5m2!1sen!2sin"
+                width="100%" 
+                height="250" 
+                style="border:0; border-radius: 12px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+            <div class="address-info">
+              <h4>Southern Sales & Services</h4>
+              <p>📍 D.No. 9-5-56, Ground Floor</p>
+              <p>🏙️ Peethalavanipalem, Shivajipalen Road</p>
+              <p>🏙️ Maddilapalem, Visakhapatnam</p>
+              <p>🏙️ Andhra Pradesh 530013, India</p>
+              <p><a href="https://maps.app.goo.gl/sgZzMxNCWY3GJodG9" target="_blank" style="color: var(--clr-primary); text-decoration: none;">📍 Get Directions</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enhanced Visiting Card -->
+        <div class="visiting-card" data-animate="fade-in">
+          <div class="visiting-card-container">
+            <div class="card-header">
+              <h3>Business Card</h3>
+              <div class="card-logo">
+                <img src="assets/images/poly.png" alt="Polyglaze" class="card-logo-img">
+              </div>
+            </div>
+            <div class="card-image-wrapper">
+              <img src="assets/images/visiting.jpg" alt="Southern Sales Business Card" />
+              <div class="card-overlay">
+                <div class="card-shine"></div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>Professional Hardware Solutions Since 2015</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= FOOTER ========= -->
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="container">
+          <div class="footer__grid">
+            <!-- Company Info -->
+            <div class="footer__section">
+              <div class="footer__logo">
+                <h3>Southern Sales & Services</h3>
+              </div>
+              <p class="footer__tagline">Your trusted <strong>Polyglaze</strong> dealer for premium adhesives & grouts since 2015.</p>
+              <div class="footer__certifications">
+                <span class="cert-badge">Licensed Dealer</span>
+                <span class="cert-badge">9+ Years Experience</span>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer__section">
+              <h4 class="footer__title">Quick Links</h4>
+              <ul class="footer__links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#offerings">Our Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Products -->
+            <div class="footer__section">
+              <h4 class="footer__title">Our Products</h4>
+              <ul class="footer__links">
+                <li><a href="#offerings">Tile Adhesives</a></li>
+                <li><a href="#offerings">Grouts & Sealers</a></li>
+                <li><a href="#offerings">Wall Putty</a></li>
+                <li><a href="#offerings">Plaster Solutions</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer__section">
+              <h4 class="footer__title">Get In Touch</h4>
+              <div class="footer__contact">
+                <div class="contact__item">
+                  <i class="fa-solid fa-phone"></i>
+                  <a href="tel:+919246679903">+91 92466 79903</a>
+                </div>
+                <div class="contact__item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:southernsales1626@gmail.com">southernsales1626@gmail.com</a>
+                </div>
+                <div class="contact__item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Visakhapatnam, Andhra Pradesh</span>
+                </div>
+                <div class="contact__item">
+                  <i class="fa-solid fa-clock"></i>
+                  <span>Mon-Sat: 9AM-7PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-content">
+            <p>© <span id="year"></span> Southern Sales & Services. All rights reserved.</p>
+            <div class="footer__bottom-links">
+              <a href="#" class="footer__link">Privacy Policy</a>
+              <a href="#" class="footer__link">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back to Top Button -->
+      <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Back to top button functionality
+      const backToTopBtn = document.getElementById('backToTop');
+      
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+          backToTopBtn.classList.add('visible');
+        } else {
+          backToTopBtn.classList.remove('visible');
+        }
+      });
+      
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    </script>
+  </body>
+</html>
