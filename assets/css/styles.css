@@ -22,6 +22,19 @@ ul{list-style:none;padding:0;margin:0}
 .brand{display:flex;align-items:center;gap:.5rem;font-weight:var(--fw-exbold)}
 .brand__logo{width:42px}
 .brand__text{font-size:1.9rem;color:var(--clr-primary)}
+
+/* Mobile responsive styling for brand text */
+@media (max-width: 768px) {
+  .brand__text {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand__text {
+    font-size: 1.1rem;
+  }
+}
 .nav{display:flex}
 .nav__list{display:flex;gap:2rem;font-weight:var(--fw-semibold)}
 .nav__list a{position:relative;padding-block:1rem}
