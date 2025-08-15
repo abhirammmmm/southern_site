@@ -175,6 +175,21 @@ ul{list-style:none;padding:0;margin:0}
 }
 
 .hero__title   { font-size: clamp(2.7rem, 6vw, 3rem); font-weight: var(--fw-exbold); margin: 0 0 1rem; }
+
+/* Fix hero title for smaller screens */
+@media (max-width: 600px) {
+  .hero__title {
+    font-size: clamp(2.2rem, 5vw, 2.5rem);
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: clamp(1.9rem, 4.5vw, 2.2rem);
+    line-height: 1.1;
+  }
+}
 .hero__subtitle{ font-size: clamp(1rem,  2.2vw, 1.4rem); margin: 0 0 2.3rem; }
 
 .btn {
